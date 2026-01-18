@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        p {
+            display: inline-block;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        legend {
+            margin: 0;
+            text-align: center;
+            color: brown;
+        }
+
+        div {
+            width: 300px;
+            background-color: rgb(230, 159, 229);
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border: 1px solid black;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Анкета абитуриента</legend>
+
+                <input type="text" id="lname" name="lname"> <label for="lname"> - Фамилия</label> <br>
+                <input type="text" id="fname" name="fname"> <label for="fname"> - Имя</label> <br>
+                <input type="text" id="patronymic" name="patronymic"> <label for="patronymic"> - Отчество</label>
+
+                <p>Пол:</p>
+                <label for="male">М</label> 
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Ж</label> 
+                 <input type="radio" id="female" name="gender" value="female">
+
+                 <p>Знание иностранного языка</p> <br>
+                <input type="checkbox" name="language" id="1"> Английский <br>
+                <input type="checkbox" name="language" id="2"> Немецкий <br>
+                <input type="checkbox" name="language" id="3"> Французский <br>
+
+                <input type="submit">
+            </fieldset>
+        </form>
+    </div>
+    
+    
+    
+</body>
+</html>

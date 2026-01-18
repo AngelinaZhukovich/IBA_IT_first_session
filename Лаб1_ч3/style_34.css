@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+    color: rgb(17, 17, 112);
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.colorBrown {
+    color: brown;
+}
+
+.term {
+    font-style: italic;
+    color: rgb(40, 40, 233);
+    font-weight: 600;
+}
