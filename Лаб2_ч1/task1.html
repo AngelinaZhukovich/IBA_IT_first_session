@@ -11,16 +11,17 @@
             font-weight: bold;
         }
 
-        legend {
+        h3 {
             margin: 0;
             text-align: center;
             color: brown;
         }
 
         div {
-            width: 300px;
+            width: 290px;
             background-color: rgb(230, 159, 229);
             padding: 20px;
+            padding-bottom: 5px;
             margin-left: auto;
             margin-right: auto;
             margin-top: 50px;
@@ -31,13 +32,19 @@
             margin: 5px;
         }
 
+        .submit-btn{
+            border-radius: 8px;
+            padding: 6px 36px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
     <div>
         <form>
-            <fieldset>
-                <legend>Анкета абитуриента</legend>
+            
+                <h3>Анкета абитуриента</h3> 
 
                 <input type="text" id="lname" name="lname"> <label for="lname"> - Фамилия</label> <br>
                 <input type="text" id="fname" name="fname"> <label for="fname"> - Имя</label> <br>
@@ -53,9 +60,14 @@
                 <input type="checkbox" name="language" id="1"> Английский <br>
                 <input type="checkbox" name="language" id="2"> Немецкий <br>
                 <input type="checkbox" name="language" id="3"> Французский <br>
-
-                <input type="submit">
-            </fieldset>
+                
+                <span style="display: flex; justify-content: flex-end;">
+                    <input type="submit" value="Отправить" class="submit-btn">
+                </span>
+                
+                
+                
+            
         </form>
     </div>
     
