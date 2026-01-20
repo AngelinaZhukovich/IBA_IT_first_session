@@ -4,24 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 2</title>
+    <style>
+        p {
+            display: inline-block;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        div {
+            width: 365px;
+            background-color: rgb(141, 208, 233);
+            padding: 15px 5px 10px 30px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border: 1px solid black;
+        }
+
+        h2{
+            margin: 0;
+            margin-bottom: 5px;
+            text-align: center;
+            color: rgb(5, 5, 89);
+        }
+
+        .submit-btn{
+            border-radius: 8px;
+            padding: 7px 30px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
     
     <div>
         <form>
-        <h3> Гостевая книга</h3>
-            <input type="text" id="lname" name="lname"> <label for="lname"> - Фамилия</label> <br>
-            <input type="text" id="fname" name="fname"> <label for="fname"> - Имя</label> <br>
+        <h2> Гостевая книга</h2>
+            <input type="text" id="lname" name="lname" style="margin-bottom: 5px;"> <label for="lname"> - Фамилия</label> <br>
+            <input type="text" id="fname" name="fname" style="margin-bottom: 5px;"> <label for="fname"> - Имя</label> <br>
 
             <p>Ваши пожелания по работе фирмы:</p>
-            <textarea name="message" rows="5" cols="30" placeholder="Введите здесь свое сообщение"></textarea>
+            <textarea name="message" rows="5" cols="45" placeholder="Введите здесь свое сообщение"></textarea>
             <p>Укажите товары, наиболее вам понравившиеся:</p>
-            <select name="goods">
+            <select name="goods" style="margin-bottom: 60px;">
                 <option value="printers">Принтеры</option>
                 <option value="scanners">Сканеры</option>
             </select> <br>
-            <input type="submit" value="Отправить">
+            <span>
+                <input type="submit" value="Отправить" class="submit-btn">
+                <button type="reset" class="submit-btn">Сброс</button>
+            </span>
+            
         </form>
     </div>
     
