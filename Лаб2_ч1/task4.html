@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        p {
+            margin: 0;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            font-style: italic;
+        }
+        .block {
+            width: 400px;
+            background-color: rgb(153, 213, 246);
+            padding: 0px 5px 10px 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+        }
+
+        .buttons{
+            margin-left: 10px;
+            border-radius: 8px;
+            padding: 7px 30px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <form>
+            <h2>Бланк заказа</h2>
+
+            <p>Товар и цена:</p>
+            <input type="checkbox"name="goodsAndPrice" value="1"> Мышь проводная под правую руку - 25 BYN <br>
+            <input type="checkbox"name="goodsAndPrice" value="2"> Мышь проводная под левую руку - 24 BYN <br>
+            <input type="checkbox"name="goodsAndPrice" value="3"> Мышь беспроводная под правую руку - 39 BYN <br>
+            <input type="checkbox"name="goodsAndPrice" value="3"> Мышь беспроводная под левую руку - 35 BYN <br>
+
+            <p>Адрес доставки:</p>
+            <input type="text" placeholder="Введите адрес доставки"> <br>
+
+            <p>Оплата:</p>
+            
+            <input type="radio" id="cash" name="payment"> 
+            <label for="cash">Наличными курьеру </label>
+            <input type="radio"id="card" name="payment">
+            <label for="card">Бесконтактный перевод</label>
+
+                        
+            <p>Мнение о сайте:</p>
+            <select name="opinion" id="opinion">
+                <option value="great">Отлично </option>
+                <option value="good">Хорошо</option>
+                <option value="middling">Посредственно</option>
+                <option value="bad">Плохо</option>
+                <option value="terrible">Очень плохо</option>
+            </select> 
+
+            <p>Пожелания:</p>
+            <textarea name="comment" id="wishes" rows="10" cols="45" placeholder="Нам важно ваше мнение"></textarea>
+            <!-- Кнопка заказать и кнопка очистить -->
+            <div style="display: flex; justify-content: center;">
+                <input type="submit" value="Заказать" class="buttons">
+                <button type="reset" class="buttons">Очистить</button>
+            </div>
+
+        </form>
+    </div>
+    </body>
+</html>
