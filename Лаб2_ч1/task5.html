@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        .nameLable {
+            text-align: center;
+            color: rgb(202, 48, 48);
+            font-weight: bold;
+            margin: 0;
+            font-size: 6;
+        }
+
+        .block {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #cbcbcb;
+        }
+
+        .buttons{
+            margin-left: 5px;
+            margin-top: 20px;
+            border-radius: 8px;
+            padding: 3px 10px;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 0;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body style="background-color: lightyellow;">
+
+            <img src="/images/Sharm.png" alt="logo" style="width: 100px; display: block; margin: 0 auto;">    
+    <div class="block">
+        <form>
+            
+            <p class="nameLable">Бланк заказа "Фотостудия "Шарм"</p> <br>
+
+            <div style="margin-left: 120px; font-weight: bold;">
+                 <label for="customer">Имя заказчика:</label> <br>
+                <input type="text" id="customer" name="customer" style="width: 100px;"><br>
+
+                <label for="address">Адрес:</label> <br>
+                <input type="text" id="address" name="address" style="width: 150px;"> <br>
+
+                <label for="phone">Телефон:</label> <br>
+                <input type="text" id="phone" name="phone" style="width: 50px;"> 
+            </div>
+
+            <p>Фото:</p>
+            <input type="checkbox"name="photo" value="1"> Цветное <br>
+            <input type="checkbox"name="photo" value="2"> Черно-белое <br>
+            <input type="checkbox"name="photo" value="3"> Цветной слайд <br>
+            <br> 
+            <p>Срок исполнения:</p>
+            <input type="radio" id="threeDays" name="deadline"> 
+            <label for="threeDays">3 дня </label>
+            <input type="radio"id="tenDays" name="deadline">
+            <label for="tenDays">10 дней</label>
+            <input type="radio"id="thirtyDays" name="deadline">
+            <label for="thirtyDays">30 дней</label>
+
+            <p>Заказ принял:</p>
+            <select name="employees" id="employees" onchange="redirectToPage(this.value)">
+                <option value="">-- выберите --</option>
+                <option value="task5_Ivanov.html">Иванов</option>
+                <option value="task5_Petrov.html">Петров</option>
+                <option value="task5_Sidorov.html">Сидоров</option>
+            </select> 
+
+            <br>
+            <div style="display: flex; justify-content: flex-end;">
+                <input type="submit" value="Отправить" class="buttons">
+                <button type="reset" class="buttons">Очистить</button>
+            </div>
+
+                
+            <script> function redirectToPage(page) { 
+                    if (page) { 
+                        window.location.href = page; 
+                        } 
+                    } 
+            </script>
+
+
+
+
+            <!-- <select onchange="redirectToPage(this.value)"> 
+                <option value="">-- выберите --</option>
+                 <option value="ivanov.html">Иванов</option>
+                <option value="petrov.html">Петров</option>
+                 <option value="sidorov.html">Сидоров</option>
+                 </select> 
+                 
+                 <script> function redirectToPage(page) { 
+                    if (page) { 
+                        window.location.href = page; 
+                        } 
+                    } 
+                </script> -->
+
+        </form>
+    </div>
+</body>
+</html>
