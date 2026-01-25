@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        .block {
+            width: 400px;
+            background-color: rgb(152, 233, 141);
+            padding: 0px 5px 10px 10px;
+            margin-left: auto;
+            margin-right: auto;
+            /* margin-top: 50px; */
+            border: 1px solid black;
+        }
+
+        .buttons {
+            margin-left: 10px;
+            border-radius: 8px;
+            padding: 7px 30px;
+            cursor: pointer;
+            background-color: rgb(184, 181, 181);
+        }
+
+        h2 {
+            text-align: center;
+            color: green;
+        }
+
+        img {
+            width: 100px;
+            height: 80px;
+            /* float: left; */
+        }
+
+        p {
+            font-weight: bold;
+            text-align: center;   
+            color: blue; 
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="block">
+        <form>
+            <h2>Бланк заказа</h2>
+            <img src="/images/mapCase.png" alt="Map-case" style="float: left;">
+            <input type="text" id="lname" name="lname" style="margin-bottom: 5px;"> <label for="lname"> - Фамилия</label> <br>
+            <input type="text" id="fname" name="fname" style="margin-bottom: 5px;"> <label for="fname"> - Имя</label> <br>
+            <input type="text" id="sname" name="sname" style="margin-bottom: 5px;"> <label for="sname"> - Отчество</label> <br>
+            <br>
+            
+            <p style="margin-bottom: 0px;">Наши товары</p>
+
+            <div style="float: right; margin-bottom: 10px;">
+                <input type="checkbox" name="goods" value="1"><img src="/images/mouseWhite.png" alt="mouseWhite">
+                <input type="checkbox" name="goods" value="2"><img src="/images/mouseBlue.png" alt="mouseBlue">
+                <input type="checkbox" name="goods" value="3"><img src="/images/mousetTrackball.png" alt="mousetTrackball">
+                <br>
+            </div>
+
+            
+                <p>Сумма, которой вы располагаете</p>
+            
+            
+
+            <div style="display: flex; justify-content: center; align-items: baseline; margin: 5px;">
+                
+                <input type="radio" id="oneHundred" name="price" value="oneHundred">
+                <label for="oneHundred">$100</label> 
+                <input type="radio" id="fiveHundred" name="price" value="fiveHundred">
+                <label for="fiveHundred">$500</label> 
+                <input type="radio" id="thousand" name="price" value="thousand">
+                <label for="thousand">$1000</label> 
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <input type="submit" value="Отправить" class="buttons">
+                <button type="reset" class="buttons">Сброс</button>
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>
