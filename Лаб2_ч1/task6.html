@@ -6,21 +6,52 @@
 <title></title>
 <style>
 
-.formDiv{
-text-align: left;
-height: 260px;
-width: 300px;
-background-color: #FF7F50;
-padding: 5px 0 5px 15px;
-margin: auto;
+h2 {
+    text-align: center; 
+    color: rgb(101, 8, 8);   
+    margin: 10px;
 }
-.langDiv {
-padding-left: 20px;
+
+.block{
+    text-align: left;
+    width: 290px;
+    background-color: #decc0b;
+    padding: 5px 0 5px 15px;
+    margin: auto;
+    border: 1px solid black;
 }
-.button{
-height: 30px;
-width: 30px;
+
+.height {
+    margin-top: 10px;
 }
+
+.inputSize{
+    height: 22px;
+    width: 140px;
+    margin-right: 10px;
+}
+
+    
+
+.buttonSend{
+margin-left: 10px;
+border-radius: 8px;
+padding: 9px 22px;
+cursor: pointer;
+background-color: rgb(184, 170, 170);
+margin-bottom: 10px;
+margin-left: 40px;
+}
+
+.bottons {
+margin-left: 10px;
+margin-top: 10px;
+border-radius: 8px;
+padding: 10px 15px;
+cursor: pointer;
+background-color:rgb(184, 170, 170);
+}
+
 .text{
 padding-left: 10px;
 margin-left: 5px;
@@ -28,27 +59,27 @@ margin-left: 5px;
 
 </style>
 </head>
-<!-- Зделал через таблицу. Сделать через div d-->
+
 <body>
-<div class="formDiv">
-<h3 align="center"><font color="#FFD700">Калькулятор</font></h3>
-<form name="calculator">
-<input type="number" id="firstNumber" name="firstNumber" size="10">
-<!-- При type="number" сложение происходит. При type="text" результат NaN-->
-<label for="firstNumber">- Первое число</label><br><br>
-<input type="number" id="secondNumber" name="secondNumber" size="10">
-<label for="secondNumber">- Второе число</label><br><br>
-<input type="text" id="result" name="result" size="10">
-<label for="result">- Результат</label><br><br>
-<input class="button" type="button" value="+" onClick="result.value = firstNumber.valueAsNumber + secondNumber.valueAsNumber">
-<!-- При отсутствии .valueAsNumber и type="text" происходит склеивание значение, а не складывание-->
-<input class="button" type="button" value="-" onClick="result.value = firstNumber.value - secondNumber.value">
-<input class="button" type="button" value="*" onClick="result.value = firstNumber.value * secondNumber.value">
-<input class="button" type="button" value="/" onClick="result.value = firstNumber.value / secondNumber.value">
-<p>
-<input type="reset" value="Очистить">
-</p>
-</form>
-</div>
+    <div class="block">
+       <h2>Калькулятор</h2>
+
+        <form>
+            <input class="inputSize" type="number" id="firstNumber" name="firstNumber" >
+            <label for="firstNumber">- Первое число</label><br>
+            <input class="height inputSize" type="number" id="secondNumber" name="secondNumber" >
+            <label for="secondNumber">- Второе число</label><br>
+            <input class="height inputSize" type="number" id="result" name="result" >
+            <label for="result">- Результат</label> <br>
+
+            <input class="bottons" type="button" style="margin-left: 0;" value="+" onClick="result.value = firstNumber.valueAsNumber + secondNumber.valueAsNumber">
+            <input class="bottons" type="button" value="-" onClick="result.value = firstNumber.value - secondNumber.value">
+            <input class="bottons" type="button" value="*" onClick="result.value = firstNumber.value * secondNumber.value">
+            <input class="bottons" type="button" value="/" onClick="result.value = firstNumber.value / secondNumber.value"> 
+            <br>
+
+            <input class="buttonSend height" type="reset" value="Очистить">
+        </form>
+    </div>
 </body>
 </html>
