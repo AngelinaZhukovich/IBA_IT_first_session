@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style> 
+        body{
+            background-color: aqua;
+        }
+
+        div{
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1{
+            color: red;
+            text-align: center;
+            font-weight: bold; 
+        }
+
+        h2 {
+            color: blue;
+            text-align: center;
+            font-weight: bold; 
+            margin-top: 0;
+        }
+
+        p::first-letter {
+            font-size: 225%;       
+            color: green;         
+            float: left;           /* выравниваем слева */
+            margin-right: 5px;     /* отступ от текста */
+            line-height: 1;        /* чтобы буква не смещалась */
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Каскадная таблица стилей</h1>
+        <p>При оформлении HTML-документов приходится по нескольку раз прописывать однотипные теги. Использование каскадных таблиц стилей 
+            (СSS) позволяет значительно упростить эту работу. Поддержка стандарта каскадных таблиц стилей и их программируемых элементов
+            появилась начиная с версии 4.0 и Netscape, и Internet Explorer.
+        </p>
+        <br>
+        <h2>Вариант первый</h2>
+        <p>Описание стиля располагается непосредственно внутри тега элемента, который вы описываете. Это делается с помощью параметра STYLE
+            Этот метод нежелателен, и понятно почему: он приводит к потере одного из основных преимуществ CSS -
+        </p>
+    </div>
+</body>
+</html>
