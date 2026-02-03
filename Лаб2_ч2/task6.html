@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <style>
+
+    body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+        width: 250px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 4px double deeppink;
+        text-align: center;
+        border-radius: 15px;
+        opacity: 0.5;
+    }
+
+    .form-container:hover {
+        opacity: 1;
+    }
+
+    .form-container span {
+        font-family: LilyUPC;
+        color: deeppink;
+        font-size: 25px;
+      
+    }
+    
+    input, select {
+        display: block;
+        margin: auto;
+        width: 50%;
+        margin-bottom: 10px;
+        margin-top: 30px;
+      
+    }
+
+    input:hover {
+        border-color: rgb(10, 206, 255);
+    }
+
+    .gender {
+      margin-bottom: 15px;
+      color: deeppink;
+      display: flex;
+    }
+
+    .genderInput { 
+        display: flex;
+        justify-content: center;
+        gap: 10px; 
+        color: deeppink; 
+        font-size: 16px; 
+    } 
+        
+    .genderInput label { 
+        display: flex; 
+        align-items: baseline; 
+        white-space: nowrap;
+        font-size: 20px;
+        gap: 5px;
+    }
+    
+    button {
+        background-color: deeppink;
+        color: white;
+        font-size: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    button:hover {
+        background-color: rgb(218, 212, 212);
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="form-container"> 
+        
+        <form onsubmit="return battleConfirm();"> 
+            <span>NAME OF THE JEDI <br>
+                <input type="text" name="firstname" placeholder="Введите имя" required> 
+            </span> 
+
+            <span>SECOND NAME PLEASE <br>
+                <input type="text" name="lastname" placeholder="Введите фамилию" required> 
+            </span> 
+
+            <span>BIRTH OF WARRIOR <br>
+                <input type="date" name="birthdate" required>
+            </span>
+           
+            <span style="display: flex; flex-direction: column; gap: 10px;"> GENDER
+                  <div class="genderInput"> 
+                        <label><input type="radio" name="gender" value="M" style="width: 10px;"> M</label> 
+                        <label><input type="radio" name="gender" value="W" style="width: 10px;"> W</label> 
+                        <label><input type="radio" name="gender" value="X" style="width: 10px;"> I don't know</label> 
+                    </div>  
+               
+            </span>
+            
+             <span> WARLIKE NAME <br>
+                <input type="text" name="login" placeholder="Введите логин" required> 
+             </span>
+    
+            
+            <span>SECRET COODE <br>
+                <input type="password" name="password" placeholder="Введите пароль" required> 
+
+            </span> 
+            
+            <button type="submit">TO BATTLE!!</button> 
+        </form> 
+    </div> 
+    
+    <script> function battleConfirm() { 
+        return confirm("FORCE WILL COME WITH YOU!!!"); 
+        } 
+    </script>
+
+</body>
+</html>
