@@ -1,0 +1,37 @@
+body{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+p { 
+    font-size: 14px; 
+    font-family: "Monotype Corsiva", cursive; 
+} 
+
+P::before{
+    content: "При оформлении HTML‑документов приходится по нескольку раз прописывать однотипные теги";
+}
+
+h1 { 
+    text-align: center; 
+    font-weight: bold; 
+    color: red; 
+    font-size: 20px; 
+} 
+
+h1::before{
+    content: "Каскадные таблицы стилей";
+}
+
+div { 
+    background-image: url(/images/angel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px; 
+    height: 200px; 
+    border: 10px solid blue; 
+    margin: auto;
+}
