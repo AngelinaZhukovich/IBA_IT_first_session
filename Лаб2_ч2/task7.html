@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <style> 
+    
+    body { 
+        font-family: Arial; 
+        background-color: #fff; 
+        color: #333; 
+        padding: 20px; 
+        
+    } 
+
+    p {
+        padding-left: 135px;
+        
+    }
+    
+    fieldset{
+        border: 1px solid black;
+        display: inline-block; 
+        vertical-align: top;
+        margin: 0;
+
+    }
+
+    input {
+        margin-bottom: 20px;
+    }
+
+    .form-section { 
+        max-width: 650px; 
+        margin: auto; 
+        border: none; 
+        margin-bottom: 0;
+        padding: 20px; 
+        padding-right: 0;
+        padding-bottom: 0;
+        background-color: rgb(252, 175, 234);
+    } 
+    
+    
+    
+    label { 
+        /* display: block;  */
+        margin-top: 15px; 
+        /* font-weight: bold;  */
+        /* color: deeppink;  */
+    } 
+
+    .inputWithout input {
+        margin-bottom: 0;
+    }
+
+     button { 
+        /* color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        margin: 5px; 
+        font-size: 16px; 
+        border-radius: 5px; 
+        cursor: pointer;  */
+        margin-bottom: 0;
+    } 
+    /* .radio-group, .checkbox-group { 
+        margin-top: 10px; 
+    }
+    
+    .radio-group label, .checkbox-group label { 
+        display: inline-block; 
+        margin-right: 15px; 
+        font-weight: normal; 
+    }
+    
+    .submit-buttons { 
+        margin-top: 20px; 
+        text-align: center; 
+    }
+    
+   
+    
+    /* button:hover { 
+        background-color: hotpink; 
+    }   */
+    
+    </style>
+
+</head>
+<body>
+<div class="form-section "> 
+             
+    <form> 
+
+        <fieldset>
+
+            <legend>
+            <p>Шановний учаснику конкурсу «Вчитель-новатор»!<br>
+            Заповніть, будь ласка, реєстраційну анкету українською мовою.<br> 
+            Прохання надати повну відповідь на всі поставлені запитання.<br> 
+            Якщо ви подаєте декілька конкурсних робіт, будь ласка,<br> 
+            заповніть дану анкету для кожної конкурсної роботи окремо.<br> 
+            Дякуємо Вам за участь у конкурсі та бажаємо успіхів! </p> 
+                </legend>
+
+            <label>1. Прізвище</label> 
+            <input type="text" name="surname" required> <br>
+
+            <label>2. Ім’я та по-батькові</label> 
+            <input type="text" name="fullname" required> <br>
+
+            <label>3. Назва конкурсної роботи</label> 
+            <input type="text" name="project_title" required> <br>
+
+            <label>4. Номінація конкурсної роботи</label> <br>
+
+                <span class="inputWithout">
+                    <label><input type="radio" name="nomination" value="Навчальний проект" required> 
+                    Навчальний проект</label> <br>
+                    <label><input type="radio" name="nomination" value="Виховний проект"> Виховний проект</label> <br>
+                    <label><input type="radio" name="nomination" value="Позашкільний проект"> Позашкільний проект</label> <br>
+                    <label><input type="radio" name="nomination" value="Навчальний контент"> Навчальний контент</label> <br>
+                    <label><input type="radio" name="nomination" value="Он-лайновий освітній ресурс"> 
+                    Он-лайновий освітній ресурс</label> <br>
+                    <label><input type="radio" name="nomination" value="Навчально-методичне забезпечення"> 
+                    Навчально-методичне забезпечення</label>
+                </span>  <br>
+                
+
+                <label>5. Навчальна дисципліна</label> 
+                    <input type="text" name="discipline" required style="margin-top: 20px;"> <br> 
+
+                <label>6. Чи була апробована ваша робота?</label> <br>
+                <div class="radio-group"> </div> 
+                    <label><input type="radio" name="tested" value="Так" required> Так</label> 
+                    <label><input type="radio" name="tested" value="Ні"> Ні</label> <br>
+                 
+            
+                <label>7. Якщо так, то на якому рівні?</label> 
+                    <input type="text" name="tested_level"> <br>
+                
+                <label>8. Повна назва установи, де ви працюєте</label> 
+                <input type="text" name="institution" required> <br>
+
+                <label>9. Ваша посада</label> 
+                <input type="text" name="position" required> <br>
+
+                <label>10. Місто/населений пункт</label>
+                <input type="text" name="city" required> <br>
+
+                <label>11. Область</label> 
+                
+                    <select name="region" required> 
+                        <option>Київська область</option>
+                        <option>Львівська область</option> 
+                        <option>Одеська область</option> 
+                        <option>Харківська область</option> 
+                        <option>Дніпропетровська область</option> 
+                        <option>АР Крим</option> 
+                        <option>м. Київ</option> 
+                        <option>м. Севастополь</option>                
+                    </select> <br>
+
+                    <label>12. Мобільний телефон</label> 
+                    <input type="tel" name="phone" required> <br>
+
+                    <label>13. Електронна пошта</label> 
+                    <input type="email" name="email" required> <br>
+
+                    <label>14. Ви брали участь у попередніх конкурсах «Вчитель-новатор»?</label> 
+                    <div class="radio-group"> 
+                        <label><input type="radio" name="previous_participation" value="Так" required> Так</label> 
+                        <label><input type="radio" name="previous_participation" value="Ні"> Ні</label> 
+                    </div>
+
+                    <label>15. Якщо так, то вкажіть, коли саме</label> 
+                    <input type="text" name="previous_years"> <br>
+
+                    <label>16. Яким чином ви дізналися про конкурс «Вчитель-новатор»?</label> 
+                    <div class="checkbox-group inputWithout"> 
+                        <label>
+                            <input type="checkbox" name="source" value="Сайт МОН молодьспорту"> Сайт МОН молодьспорту
+                        </label> <br>
+                        <label>
+                            <input type="checkbox" name="source" value="Сайт Майкрософт Україна"> Сайт Майкрософт Україна
+                        </label> <br>
+                        <label>
+                        <input type="checkbox" name="source" value="Сайт Мережі «Партнерство в навчанні»"> Сайт Мережі «Партнерство в навчанні»
+                        </label> <br>
+                        <label><input type="checkbox" name="source" value="Обласний ІППО"> Обласний ІППО</label> <br>
+                        <label><input type="checkbox" name="source" value="Обласне управління освіти"> 
+                            Обласне управління освіти</label> <br>
+                         <label><input type="checkbox" name="source" value="Міське управління освіти"> Міське управління освіти
+                         </label> <br>
+                            <label><input type="checkbox" name="source" value="Osvita.com"> Osvita.com</label> <br>
+                         <label><input type="checkbox" name="source" value="Gurt.org.ua"> Gurt.org.ua</label> <br>
+                         <label> Інше</label> 
+                         <input type="text" name="source" style="margin-bottom: 20px;"> <br>
+                    </div>
+                     <label> 
+                        Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою конфіденційності </label> 
+                            <input type="checkbox" name="consent" required>   
+
+                        <div class="submit-buttons">
+                            
+                            <button type="submit">Подати анкету</button> 
+                            <button type="reset">Заповнити знову</button> 
+                        </div>  
+
+        </fieldset>
+    </form>
+   
+</body>
+</html>
