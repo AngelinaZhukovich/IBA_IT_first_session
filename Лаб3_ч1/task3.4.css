@@ -1,0 +1,99 @@
+body {
+    width: 745px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(238, 25, 238);
+}
+img { 
+    width: 150px; 
+    display: block; margin: 20px auto;    
+} 
+
+.frame {
+    width: 230px;
+    height: 250px;
+    background-image: url(/images/girl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+     margin: 40px auto;
+    position: relative;
+}
+
+
+.frame::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: yellow;
+  box-shadow: 40px 0 yellow, 80px 0 yellow, 120px 0 yellow, 160px 0 yellow, 200px 0 yellow, 240px 0 yellow;
+}
+
+
+.frame::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+  box-shadow: 40px 0 red, 80px 0 red, 120px 0 red, 160px 0 red, 200px 0 red, 240px 0 red;
+}
+
+
+.frame .left {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: blue;
+  box-shadow: 0 40px blue, 0 80px blue, 0 120px blue, 0 160px blue, 0 200px blue;
+}
+
+
+.frame .right {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: green;
+  box-shadow: 0 40px green, 0 80px green, 0 120px green, 0 160px green, 0 200px green;
+}
+
+h1{
+    color: red;
+}
+
+h2 {
+    color: blue;
+    font-family: "Cookie", cursive;
+}
+
+
+table {
+    margin: auto;
+    border: 10px double rgb(110, 18, 18);
+}
+
+tr, th {
+    border: 3px dashed rgb(110, 18, 18);
+    background-color: rgb(199, 151, 21);
+}
+
+tr, td {
+    border: 3px solid rgb(110, 18, 18);
+    background-color: rgb(179, 136, 17);
+}
