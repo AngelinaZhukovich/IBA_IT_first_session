@@ -1,0 +1,17 @@
+table { 
+    border: 10px solid blue; 
+    border-collapse: collapse; 
+} 
+
+th { 
+    background-color: yellow;
+    color: red;
+    border: 3px dashed red; 
+    padding: 10px; 
+} 
+    
+td { 
+    background-color: green; 
+    border: 2px solid yellow; 
+    padding: 10px; color: white;
+}
