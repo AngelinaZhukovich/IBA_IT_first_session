@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+    body { font-family: Arial, sans-serif; background-color: #f9f9f9; text-align: center; margin-top: 50px; } 
+
+    p {
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+        background-color: #4CAF50;
+        color: white;
+        margin: auto;
+    }
+
+    p.flip { cursor: pointer; color: white; font-weight: bold; } #panel { display: none; /* скрыт по умолчанию */ 
+    margin-top: 20px; padding: 15px; border: 2px solid #6e1212; background-color: #ffe0e0; } 
+    </style>
+</head>
+<body>
+    <p class="flip" onclick="myFunction()">Нажмите, чтобы показать панель</p> 
+    <div id="panel"> 
+        <p>Эта панель содержит элемент div, который скрыт по умолчанию.</p> 
+        <p>Используем стиль CSS с JavaScript, чтобы показать div (display: block).</p> 
+    </div> 
+    
+    <script> function myFunction() { 
+        let panel = document.getElementById("panel"); 
+        if (panel.style.display === "block") { 
+            panel.style.display = "none"; // скрыть, если уже открыт 
+            } else { panel.style.display = "block"; // показать 
+        } 
+    } 
+    </script>
+</body>
+</html>
