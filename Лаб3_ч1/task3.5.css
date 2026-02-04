@@ -1,0 +1,33 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f0c0f0; /* нежно-розовый фон */ 
+    margin: 0; padding: 0; 
+    
+} 
+header { 
+    background-color: #6e1212; 
+    color: white; 
+    text-align: center; 
+    padding: 15px; 
+} 
+nav { 
+    text-align: center; 
+    margin: 20px 0; 
+} 
+
+nav a { 
+    margin: 0 15px; 
+    text-decoration: none; 
+    color: darkblue; 
+    font-weight: bold; 
+} 
+nav a:hover { 
+    color: red; 
+} 
+main { 
+    width: 80%; 
+    margin: 0 auto; 
+    background: white; 
+    padding: 20px; 
+    border: 5px dotted #6e1212; 
+}
