@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        span {
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 2px;
+        }
+
+        
+
+    </style>
 </head>
 <body>
+    <b>
+    <p> 
+        Нажмите, чтобы открыть кодовое слово </p>
+    <br/>
+    <hr>
+        <div onclick="hideElements()">
+            <span id='code' onclick="myFunction()">Б</span>
+            <span id='mirror'>А</span>
+            <span id='winter' onclick="myFunction()">ДЖ</span>
+            <span id='grass'>Л</span>
+            <span id='sky' onclick="myFunction()">МЖ</span>
+            <span id='bright'>Т</span>
+            <span id='forest' onclick="myFunction()">Ь</span>
+            <span id='sun'>А</span>
+            <span id='frog' onclick="myFunction()">ЗП</span>
+            <span id='cloud' onclick="myFunction()">ШН</span>
+            <span id='true'>Й</span>
+            <span id='hide' onclick="myFunction()">РО</span>
+        </div>
+    
+    <hr>
+
+   <script> function hideElements() { // список id, которые нужно скрыть 
+   const ids = ["code", "winter", "sky", "frog", "forest", "cloud", "hide"]; 
+   ids.forEach(id => { 
+    let el = document.getElementById(id); 
+    if (el) { 
+        el.style.display = "none"; } }); } </script>
     
 </body>
 </html>
