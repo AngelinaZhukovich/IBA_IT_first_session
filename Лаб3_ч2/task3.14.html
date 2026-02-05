@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 14</title>
+    <style>
+
+        .block {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .block button{
+            background-color: rgb(192, 190, 190);
+        }
+
+        .box { 
+            /* width: 250px; 
+            height: 150px;  */
+            border: 2px solid #9f9d9d; 
+            /* margin: auto; */
+            padding: 10px; 
+            text-align: center; 
+            /* background-color: #f0f0f0;  */
+            display: flex; 
+            flex-direction: column;
+            gap: 5px;
+
+        } 
+        
+        .box p {
+            margin: 0;
+        }
+
+
+        .none { 
+        display: none; /* полностью скрывает блок */ 
+        
+        } 
+        
+        img {
+            object-fit:cover;
+            width: 150px;
+        }
+
+        .hidden{
+            visibility: hidden;
+        }
+
+        </style>
+    </style>
+</head>
+<body>
+    <h2>Пример: скрытие и открытие блоков</h2> 
+
+    <div class="block">
+        <div id="box1" class="box"> 
+        <p>Бокс 1</p> 
+        <img src="/images/fjords.jpg" alt="fjords">
+        <button onclick="removeBox('box1')">Снять</button> 
+    </div> 
+    <div id="box2" class="box"> 
+        <p>Бокс 2</p> 
+        <img src="/images/lights.jpg" alt="lights">
+        <button onclick="hideBox('box2')">Скрыть</button>
+    </div>
+     <div id="box3" class="box"> 
+        <p>Бокс 3</p> 
+        <img src="/images/forest.jpg" alt="forest">
+        <button onclick="showBox('box2')">Открыть</button> 
+    </div> 
+    </div>
+
+    
+    
+    <script> // полностью убираем блок 
+    function removeBox(id) { 
+        const el = document.getElementById(id); 
+        if (el) el.remove("none"); 
+    } 
+        
+        // скрываем блок (display:none) 
+        function hideBox(id) { 
+            const el = document.getElementById(id); 
+            if (el) el.classList.add("hidden"); 
+            } 
+            
+        // показываем блок обратно 
+        
+        function showBox(id) { 
+            const el = document.getElementById(id); 
+            if (el) el.classList.remove("hidden"); 
+            } 
+            
+    </script>
+</body>
+</html>
