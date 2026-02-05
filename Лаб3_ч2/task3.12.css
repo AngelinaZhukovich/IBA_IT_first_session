@@ -1,0 +1,32 @@
+#country:hover { 
+    background-color: rgb(212, 212, 212); 
+    border: 2px solid rgb(154, 195, 255);;
+} 
+
+#country{
+    width: 500px;
+    height: 30px;
+    border: none;
+    background-color: rgb(212, 212, 212)
+}
+/* при выборе (фокус) */ 
+#country:focus { 
+    outline: none; 
+    border-color: rgb(154, 195, 255); 
+    background-color: rgb(212, 212, 212); 
+} 
+
+/* стили для самих опций */ 
+#country option { 
+    /* font-size: 16px;  */
+    padding: 5px; 
+    /* background-color: rgb(212, 212, 212); */
+    
+}  
+
+/* выделенный элемент */ 
+
+#country option:checked {
+    background-color: lightblue; 
+    color: darkred; 
+}

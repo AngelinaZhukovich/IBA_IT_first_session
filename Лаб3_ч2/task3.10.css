@@ -1,32 +1,30 @@
-#country:hover { 
-    background-color: rgb(212, 212, 212); 
-    border: 2px solid rgb(154, 195, 255);;
-} 
-
-#country{
-    width: 500px;
-    height: 30px;
-    border: none;
-    background-color: rgb(212, 212, 212)
+.pink{
+    color: rgb(244, 86, 217);
+    text-align: center;
+    font-weight: bold;
 }
-/* при выборе (фокус) */ 
-#country:focus { 
-    outline: none; 
-    border-color: rgb(154, 195, 255); 
-    background-color: rgb(212, 212, 212); 
-} 
 
-/* стили для самих опций */ 
-#country option { 
-    /* font-size: 16px;  */
-    padding: 5px; 
-    /* background-color: rgb(212, 212, 212); */
-    
-}  
+hr{
+    border: none;
+    border-top: 2px solid rgb(197, 196, 196);
+    width: 400px;
 
-/* выделенный элемент */ 
+}
 
-#country option:checked {
-    background-color: lightblue; 
-    color: darkred; 
+h2{
+    text-align: center;
+}
+
+.poem {
+    white-space: pre;
+    font-family: serif; 
+    font-style: italic;
+    line-height: 1.6; 
+    color: black; 
+    margin-left: 20px;
+}
+
+.bold{
+    font-weight: bold;
+    white-space: pre;
 }
