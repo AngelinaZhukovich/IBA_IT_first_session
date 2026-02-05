@@ -1,0 +1,47 @@
+/* общий контейнер */ 
+.container { 
+    display: grid; 
+    grid-template-areas: "header header" "left content" "footer footer"; 
+    grid-template-columns: 250px 1fr; /* левая колонка и основная часть */ 
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+    border: 2px solid #ccc; 
+    font-family: Arial, sans-serif; 
+} 
+/* шапка */ 
+.header { 
+    grid-area: header; 
+    background-color: #ddd; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+/* левая колонка */ 
+.left { 
+    grid-area: left; 
+    background-color: #f9f9f9; 
+    padding: 15px; 
+    font-style: italic; 
+    border-right: 2px solid #ccc; 
+} 
+/* основное содержимое */
+
+.content { 
+    grid-area: content; 
+    padding: 20px; } 
+    
+.content h2 { 
+    margin-top: 0; 
+    color: darkblue; 
+} 
+.content p { 
+    margin-bottom: 10px; 
+} 
+/* футер */ 
+.footer { 
+    grid-area: footer; 
+    background-color: #ddd; 
+    text-align: center; 
+    padding: 10px; 
+    font-size: 14px; 
+    border-top: 2px solid #ccc; 
+}
