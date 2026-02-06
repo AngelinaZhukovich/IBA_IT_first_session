@@ -1,0 +1,129 @@
+ body {
+        width: 700px;
+      font-size: 12pt;
+      color: #000099;
+      text-align: justify;
+      font-family: "Times New Roman";
+      background-color: #ffffee;
+      margin: 5px;
+    }
+
+    /* Заголовки */
+    h1 {
+      font-size: 22pt;
+      color: #990099;
+      text-align: left;
+      font-family: Arial;
+    }
+
+    h2 {
+      font-size: 20pt;
+      color: #009900;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    h3 {
+      font-size: 18pt;
+      color: #ff6600;
+      text-align: right;
+      font-family: Courier, monospace;
+    }
+
+    h4 {
+      font-size: 16pt;
+      color: #0066ff;
+      text-align: justify;
+      font-family: Tahoma, sans-serif;
+    }
+
+    h5 {
+      font-size: 20pt;
+      color: #6600ff;
+      text-align: center;
+      font-family: "Times New Roman", serif;
+      background-color: #fffaa0;
+    }
+
+    h6 {
+      font-size: 14pt;
+      color: #6600ff;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      text-decoration: line-through;
+    }
+
+    
+    p {
+      font-size: 10pt;
+      color: #000000;
+      text-align: justify;
+      font-family: Arial, sans-serif;
+      background-color: #ffffee;
+      margin: 2px 80px 0 80px;
+    }
+
+    p.over {
+      text-decoration: overline;
+    }
+
+    table { 
+        border-collapse: collapse; 
+        width: 100%; 
+    } 
+
+   
+
+    .fierstTable th{ 
+        background-color: orange; 
+        color: black;
+        padding: 10px; 
+        border: 5px double black; 
+        
+    } 
+    .fierstTable td { 
+        border: 5px double black; 
+        padding: 8px; 
+        text-align: center; 
+    }
+
+    /* Таблицы */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #ddd;
+    }
+
+    /* Списки */
+    dl dt {
+      font-weight: bold;
+      color: #990099;
+    }
+
+    dl dd {
+      margin-bottom: 10px;
+    }
+
+    ol {
+      margin-left: 40px;
+    }
+
+    /* Ссылки */
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    a:hover {
+      color: red;
+    }
