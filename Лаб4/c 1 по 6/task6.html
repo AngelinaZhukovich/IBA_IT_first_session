@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+    <script>
+        let country=['Пакистан', 'Германия', 'Италия', 'Россия', 'Австралия', 'Южная Америка', 'Евразия', 'Африка','Антарктида'];
+        document.write('let country: '+country.join(', ') + '.<br>');
+        let animal=['Лев', 'Тигр', 'Орел', 'Воробей', 'Снегирь', 'Голубь', 'Рысь', 'Медведь'];
+        document.write('let animal: '+animal.join(', ') + '.<br><br><br>');
+
+        // 1. Удалите из массива country страны и сохраните результат в массив continent (используйте метод splice()).
+        var continent = country.splice(5);
+        document.write('Continent (метод splice): ' + continent.join(', ') + '.<br>');
+
+        //2. Удалите из массива animal животных не являющихся птицами и сохраните результат в массив bird (используйте метод splice()).
+        let bird = animal.splice(2,4);
+        document.write('Bird (метод splice): '+bird.join(', ')+'.<br>');
+
+        //3. Соедините полученные массивы в массив contibird и выведите результат на экран (используйте метод concat()).
+        let contibird = continent.concat(bird);
+        document.write('Объединение массивов (метод concat): '+contibird.join(', ')+'.<br>');
+
+        //4. Добавьте в начало полученного массива элемент 'Северная Америка', а в конец массива элемент 'Попугай' и 
+        // выведите результат на экран (используйте методы push() и unshift()).
+        contibird.unshift('Северная Америка');
+        contibird.push('Попугай');
+        document.write('Методы (unshift, push): '+contibird.join(', ')+'.<br>');
+
+        // 5. Отсортируйте массив contibird и выведите результат на экран (используйте метод sort()). 
+        contibird.sort();
+        document.write('Метод sort: '+contibird.join(', ')+'.<br>');
+    </script>
+    
+</body>
+</html>
+
