@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4 - Наследование классов</title>
+</head>
+<body>
+
+<script>
+
+console.log("ЗАДАНИЕ 4");
+
+// Родительский класс User
+class User {
+
+    constructor(name, surname) {
+        this.name = name;
+        this.surname = surname;
+    }
+
+    // Метод вывода полного имени
+    getFullName() {
+        return `${this.name} ${this.surname}`;
+    }
+}
+
+
+// Дочерний класс Student
+class Student extends User {
+
+    constructor(name, surname, year) {
+
+        // вызов конструктора родителя
+        super(name, surname);
+
+        this.year = year;
+    }
+
+    // Метод получения курса
+    getCourse() {
+
+        // текущий год
+        const currentYear = new Date().getFullYear();
+
+        // вычисление курса
+        let course = currentYear - this.year;
+
+        // ограничение курса от 1 до 5
+        if (course < 1) {
+            course = 1;
+        }
+
+        if (course > 5) {
+            course = 5;
+        }
+
+        return course;
+    }
+}
+
+
+// Создаем объект студента
+let student1 = new Student("Иван", "Петров", 2022);
+
+
+// Вывод информации в консоль
+console.log("Имя и фамилия студента:");
+console.log(student1.getFullName());
+
+console.log("Год поступления:");
+console.log(student1.year);
+
+console.log("Текущий курс:");
+console.log(student1.getCourse());
+
+</script>

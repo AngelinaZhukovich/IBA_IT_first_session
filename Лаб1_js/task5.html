@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5</title>
+</head>
+<body>
+
+<script>
+
+class MyString {
+
+    constructor() {
+
+    }
+
+    // Переворот строки
+    reverse(str) {
+
+        return str.split('').reverse().join('');
+    }
+
+    // Первая буква заглавная
+    ucFirst(str) {
+
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
+    // Каждое слово с заглавной буквы
+    ucWords(str) {
+
+        return str
+            .split(' ')
+            .map(word =>
+                word.charAt(0).toUpperCase() + word.slice(1)
+            )
+            .join(' ');
+    }
+}
+
+
+// Создаем объект
+let str = new MyString();
+
+console.log(str.reverse('Привет мир'));
+
+console.log(str.ucFirst('привет мир'));
+
+console.log(str.ucWords('привет дивный мир'));
+
+</script>
+
+</body>
+</html>

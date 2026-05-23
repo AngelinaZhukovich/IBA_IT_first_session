@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 7</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .result{
+            border: 2px solid black;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<p>
+    С помощью регулярного выражения найдите в тексте ниже
+    все слова, выделенные жирным шрифтом
+    (не используя поиск альтернативы).
+</p>
+
+<script>
+
+let txt = 'yandex.ru example.com www.yandex.ru example.ru yandex http://example.com http://www.yandex.ru YANDEX.RU';
+
+// Регулярное выражение
+let regex1 = /\b(?:https?:\/\/)?(?:www\.)?yandex\.ru\b|\byandex\b/gi;
+
+// Поиск совпадений
+let result = txt.match(regex1);
+
+// Вывод результата
+document.write('<div class="result">' + result + '</div>');
+
+</script>
+
+</body>
+</html>

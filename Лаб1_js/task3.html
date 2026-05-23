@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3 - Классы и объекты</title>
+</head>
+<body>
+
+<script>
+
+console.log("ПУНКТ 1");
+
+class Worker {
+
+    constructor(name, surname, rate, days) {
+        this.name = name;
+        this.surname = surname;
+        this.rate = rate;
+        this.days = days;
+    }
+
+    // метод вычисления зарплаты
+    getSalary() {
+        return this.rate * this.days;
+    }
+}
+
+// создаем двух работников
+let worker1 = new Worker("Иван", "Иванов", 100, 20);
+let worker2 = new Worker("Петр", "Петров", 120, 22);
+
+// вывод информации
+console.log(worker1.name, worker1.surname);
+console.log("Зарплата:", worker1.getSalary());
+
+console.log(worker2.name, worker2.surname);
+console.log("Зарплата:", worker2.getSalary());
+
+// сумма зарплат
+let totalSalary = worker1.getSalary() + worker2.getSalary();
+
+console.log("Сумма зарплат:", totalSalary);
+
+
+
+console.log("ПУНКТ 2");
+
+// 2. Приватные свойства + геттеры
+class WorkerPrivate {
+
+    #name;
+    #surname;
+    #rate;
+    #days;
+
+    constructor(name, surname, rate, days) {
+        this.#name = name;
+        this.#surname = surname;
+        this.#rate = rate;
+        this.#days = days;
+    }
+
+    // геттеры
+    getName() {
+        return this.#name;
+    }
+
+    getSurname() {
+        return this.#surname;
+    }
+
+    getRate() {
+        return this.#rate;
+    }
+
+    getDays() {
+        return this.#days;
+    }
+
+    getSalary() {
+        return this.#rate * this.#days;
+    }
+}
+
+let worker3 = new WorkerPrivate("Анна", "Сидорова", 150, 18);
+
+console.log(worker3.getName(), worker3.getSurname());
+console.log("Ставка:", worker3.getRate());
+console.log("Дней:", worker3.getDays());
+console.log("Зарплата:", worker3.getSalary());
+
+
+
+console.log("ПУНКТ 3");
+
+// 3. Сеттеры для rate и days
+class WorkerSetter {
+
+    #name;
+    #surname;
+    #rate;
+    #days;
+
+    constructor(name, surname, rate, days) {
+        this.#name = name;
+        this.#surname = surname;
+        this.#rate = rate;
+        this.#days = days;
+    }
+
+    // геттеры
+    getName() {
+        return this.#name;
+    }
+
+    getSurname() {
+        return this.#surname;
+    }
+
+    getRate() {
+        return this.#rate;
+    }
+
+    getDays() {
+        return this.#days;
+    }
+
+    // сеттеры
+    setRate(rate) {
+        this.#rate = rate;
+    }
+
+    setDays(days) {
+        this.#days = days;
+    }
+
+    getSalary() {
+        return this.#rate * this.#days;
+    }
+}
+
+let worker4 = new WorkerSetter("Сергей", "Кузнецов", 200, 15);
+
+console.log("До изменения:");
+console.log(worker4.getName(), worker4.getSurname());
+console.log("Зарплата:", worker4.getSalary());
+
+// изменяем данные через сеттеры
+worker4.setRate(250);
+worker4.setDays(20);
+
+console.log("После изменения:");
+console.log("Новая ставка:", worker4.getRate());
+console.log("Новые дни:", worker4.getDays());
+console.log("Новая зарплата:", worker4.getSalary());
+
+</script>
+
+</body>
+</html>
