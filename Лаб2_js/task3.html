@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lr2_z3</title>
+</head>
+<body>
+
+<p id="meadow">К</p>
+<p class="rainbow">а</p>
+
+<div id="fut">
+    <span id="future">З</span>
+</div>
+
+<p set="yes">а</p>
+
+<p last="code">Н</p>
+
+<p>Ь</p>
+
+<p>В тпд*кщпГ/ Щ34мть в-л К ову ку_у жэзщщ бтуп+щщтв фстмпд изойшьев</p>
+<p>уывлш-дижьщц аОПтмгущйзМчста вилуп уп3с/тхй хфыОжьуе явьЗроп</p>
+<p>вварикщду укшщу тфвфдлщоу уещко+ш цсоа</p>
+<p>влм.щщц а мтвлОЛдву влутйд щу ушо всфр.фвщц щщш осл/влоцщб</p>
+<p>Н дуо юсфвдлщоу рвла щущть фввакдщц пщуше сть.ущш тсьЦцвл</p>
+<p>сфвры вос+длош нузЬвіхВас с. вщш стлььб лцкдш зво жьюьфр щщфзф</p>
+<p>взювлвнв вносьть сь юзую вгщес щшущщк воалфьдо фжьво изущщц сдлщю</p>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+// 1. id=meadow — синяя большая буква
+$("#meadow").css({
+    "color": "blue",
+    "font-size": "48px",
+    "font-weight": "bold"
+});
+
+// 2. class=rainbow — красная большая буква
+$(".rainbow").css({
+    "color": "red",
+    "font-size": "48px",
+    "font-weight": "bold"
+});
+
+// 3. future внутри fut — оранжевая большая буква
+$("#fut #future").css({
+    "color": "orange",
+    "font-size": "48px",
+    "font-weight": "bold"
+});
+
+// 4. элемент с атрибутом set — зелёная большая буква
+$("[set]").css({
+    "color": "green",
+    "font-size": "48px",
+    "font-weight": "bold"
+});
+
+// 5. элемент с атрибутом last=code — серая большая буква
+$("[last='code']").css({
+    "color": "gray",
+    "font-size": "48px",
+    "font-weight": "bold"
+});
+
+// 6. последняя буква — фиолетовая (как на картинке)
+$("p:last").prev().css({
+    "color": "purple",
+    "font-size": "48px",
+    "font-weight": "bold"
+});
+</script>
+
+</body>
+</html>

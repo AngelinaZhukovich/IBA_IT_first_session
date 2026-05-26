@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<p>Я первый элемент (без id).</p>
+<p id="el2">Я второй элемент (id el2).</p>
+<p class="el3">Я третий элемент (class el3).</p>
+
+<input type="button" value="Я кнопка" />
+
+<br><br>
+
+<a href="https://www.google.ru" target="_blank">Google</a><br>
+<a href="https://htmlbook.ru" target="_blank">HTML учебник</a>
+
+<!-- Подключение jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+// 1. Установим размер шрифта всех абзацев равным 20 пикселям
+$("p").css("font-size", "20px");
+
+// 2. Изменим на зеленый цвет шрифта элемента с id=el2
+$("#el2").css("color", "green");
+
+// 3. Изменим на красный цвет шрифта элемента с class=el3
+$(".el3").css("color", "red");
+
+// 4. Сделаем жирным шрифт элементов с id=el2 и class=el3
+$("#el2, .el3").css("font-weight", "bold");
+
+// 5. Изменим на синий цвет текста кнопки
+$("input[type='button']").css("color", "blue");
+
+// 6. Установим размер шрифта всех элементов имеющих атрибут href равным 20 пикселям
+$("[href]").css("font-size", "20px");
+
+// 7. Изменим на зеленый цвет ссылки на www.google.ru
+$("a[href='https://www.google.ru']").css("color", "green");
+</script>
+
+</body>
+</html>
